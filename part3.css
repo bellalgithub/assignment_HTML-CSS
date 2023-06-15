@@ -1,0 +1,48 @@
+  /* Define CSS variables */
+  :root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --font-size-medium: 16px;
+  }
+  
+  /* Apply consistent styling using CSS variables */
+  body {
+    font-size: var(--font-size-medium);
+  }
+  
+  h1 {
+    color: var(--primary-color);
+  }
+  
+  p {
+    color: var(--secondary-color);
+  }
+  
+  /* Apply different styles to links on hover and click */
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  a:active {
+    color: #002080;
+  }
+  
+  /* Add decorative content using pseudo-elements */
+  .decorated-element::before {
+    content: "→";
+    color: var(--secondary-color);
+    margin-right: 5px;
+  }
+  
+  /* Apply box model properties */
+  .box {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+  }
